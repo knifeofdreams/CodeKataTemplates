@@ -1,0 +1,16 @@
+{
+  "name": "code-kata",
+  "version": "0.0.1",
+  "description": "javascript code kata template",
+  "author": "Judit Ordog-Andrasi",
+  "scripts": {
+    "test": "node_modules/.bin/mocha kata.spec.js"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "engines": {
+    "node": "6.9.5"
+  }
+}
