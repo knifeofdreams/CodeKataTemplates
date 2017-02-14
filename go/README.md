@@ -8,7 +8,5 @@
 
 ``` go
 export GOPATH=$PWD
-// run the code with:
-// go run kata.go
 go test
 ```

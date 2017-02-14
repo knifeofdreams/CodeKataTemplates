@@ -11,7 +11,5 @@
 ``` javascript
 nvm install
 npm install
-node node_modules/.bin/mocha kata.spec.js
-// or
 npm test
 ```
