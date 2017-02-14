@@ -8,9 +8,9 @@ class CodeKata {
 
 }
 
-function my_test() {
+function myTest() {
     return 'my_test'
 }
 
 module.exports.CodeKata = CodeKata;
-module.exports.my_test = my_test;
+module.exports.myTest = myTest;

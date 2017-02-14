@@ -9,7 +9,7 @@
 ## Running the tests
 
 ``` javascript
-nvm use 6.9.5
+nvm install
 npm install
 node node_modules/.bin/mocha kata.spec.js
 // or
