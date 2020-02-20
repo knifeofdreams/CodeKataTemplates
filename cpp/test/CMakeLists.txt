@@ -1,0 +1,10 @@
+enable_testing()
+add_library(Catch INTERFACE)
+target_include_directories(Catch INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/catch/include)
+
+add_executable(CodeKataTest CatchMain.cpp CodeKataTest.cpp)
+target_include_directories(CodeKataTest PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>)
+target_include_directories(CodeKataTest PRIVATE $<TARGET_PROPERTY:CodeKata,INCLUDE_DIRECTORIES>)
+target_link_libraries(CodeKataTest PRIVATE CodeKata)
+target_link_libraries(CodeKataTest PRIVATE Catch)
+add_test(NAME CodeKataTest COMMAND CodeKataTest)

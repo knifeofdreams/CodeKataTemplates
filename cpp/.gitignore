@@ -1,0 +1,3 @@
+# CMake build artifacts
+cmake-build-*/
+build/
